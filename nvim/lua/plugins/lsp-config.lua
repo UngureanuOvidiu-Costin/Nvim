@@ -22,6 +22,7 @@ return {
       if vim.lsp then
         lspconfig.lua_ls.setup({})
         lspconfig.rust_analyzer.setup({})
+        lspconfig.jdtls.setup({})
         
         -- Keybinding for hover
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
